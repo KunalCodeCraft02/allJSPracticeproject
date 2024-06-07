@@ -1,0 +1,72 @@
+@font-face {
+    font-family:RE;
+    src: url(./64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+@font-face {
+    font-family: RXC;
+    src: url(./l\ \(1\));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: RE;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+#nav h2{
+    font-family: RXC;
+    /* color: white; */
+}
+#nav i{
+    font-size: 2.3vw;
+    font-weight: 700;
+    /* color: white; */
+}
+#full{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.368);
+    top: 0;
+    right: -30%;
+    backdrop-filter: blur(20px);
+    padding: 100px 50px; 
+    
+}
+#full h4{
+    font-size: 2.9rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+   
+}
+#full i{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 800;
+    background: white;
+    border-radius: 50%;
+}

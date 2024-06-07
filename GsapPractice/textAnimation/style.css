@@ -1,0 +1,28 @@
+@font-face {
+    font-family: RE;
+    src: url(./64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: RE;
+    background-color: #000000;
+    color: white;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    font-size: 100px;
+    overflow: hidden;
+}
+h1 span{
+    display: inline-block;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container{
+            min-height: 500px;
+            width: 500px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .circle{
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+        #btn{
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="classAdd">
+
+        </div>
+        <button id="btn">Click</button>
+    </div>
+
+    <script>
+        let addClass = document.getElementById("classAdd");
+        let btn = document.getElementById("btn");
+        btn.addEventListener('click',()=>{
+            addClass.classList.add('circle')
+        }); 
+    </script>
+</body>
+</html>

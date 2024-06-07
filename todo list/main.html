@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(350deg , rgb(62, 62, 169) ,rgb(55, 206, 206),yellow );
+        }
+        .container{
+            height: 500px;
+            aspect-ratio: 1;
+            background-color: white;
+           
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 12px 24px;
+            background-color: orange;
+            border-radius: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        li{
+            list-style-type: none;
+            font-size: 24px;
+            padding: 12px 8px 12px 12px;
+        }
+        .inp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            border: none;
+            background: #edeef0;
+            
+        }
+        input{
+            flex: 1;
+            outline: none;
+            border: none;
+            background: transparent;
+            padding: 12px 24px;
+            text-align: center;
+        }
+        .list-container{
+            height: 300px;
+            width: 300px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inp">
+            <input type="text" id="inpt" placeholder="enter your today`s work">
+        </div>
+        <div class="btn">
+            <button onclick="run()">Add</button>
+        </div>
+     
+        <div class="list">
+            <ul class="list-container">
+                <li>task</li>
+            </ul>
+        </div>
+
+        <script>
+            let inputBox = document.getElementById("inpt")
+            let listcon = document.querySelector(".list-container")
+            function run(){
+                let li = document.createElement("li")
+                li.innerHTML = inputBox.value;
+                listcon.appendChild(li);
+
+            }
+        </script>
+    </div> 
+</body>
+</html>

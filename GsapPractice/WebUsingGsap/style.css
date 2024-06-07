@@ -1,0 +1,230 @@
+@font-face {
+    font-family: re;
+    src: url(../navAnimation/64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+
+@font-face {
+    font-family: China;
+    src: url(./3856NeueMachina.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: re;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+section{
+    width: 100%;
+    position: relative;
+}
+
+nav{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+}
+
+nav h1{
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+nav h1 i{
+    rotate: 45deg;
+    display: inline-block;
+}
+
+#part2{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#part2 h4{
+    cursor: pointer;
+    font-weight: 800;
+}
+
+#part2 button{
+    outline: 0;
+    border: 0;
+    padding: 12px 17px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all;
+}
+
+#part2 button:hover{
+    background-color: #B9FF66;
+}
+
+.center{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    margin-top: 2.4vw;
+}
+
+.centerPart1{
+    height: 100%;
+    width: 50%;
+}
+
+.centerPart2{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.centerPart1 h1{
+    font-size: 4vw;
+    padding: 3vw 0vw 0 5vw;
+    font-family: China;
+}
+
+.centerPart1 p{
+    padding: 1.2vw 0 0 5vw;
+}
+
+.centerPart1 button{
+    margin-left: 5vw;
+    margin-top: 2vw;
+    padding: 20px 30px;
+    background-color: #B9FF66;
+    color: black;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+}
+
+.centerPart2 img {
+    height: 100%;
+    width: 90%;
+}
+
+.Section1Bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 7vw;
+}
+
+.Section1Bottom img{
+    height: 40px;
+    color: white;
+}
+
+.Section1Bottom .idd{
+    height: 100px;
+}
+
+.section2{
+    height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.services{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 5vw;
+}
+
+.services h3{
+    font-size: 3rem;
+    background-color: #B9FF66;
+    font-weight: 500;
+    font-family: China;
+}
+
+.services p{
+    width: 40%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: China;
+}
+
+.elem{
+    height: 300px;
+    width: 48%;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 0 15px 0 black;
+    display: flex;
+    padding: 10px;
+}
+
+.elem-part1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.elem-part1 h2{
+    font-size: 2.4vw;
+    background-color: #B9FF66;
+}
+
+.elem-part1 h4{
+    padding-bottom: 1.5vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.elem-part1 h4 i{
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+.elem-part2{
+    height: 100%;
+    width: 50%;
+}
+
+.elem-part2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.black{
+    background-color: black;
+}

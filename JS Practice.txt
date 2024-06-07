@@ -1,0 +1,17 @@
+
+
+1) hum js code me css ke class ko add ya remove krr sakte he using this syntax "imgbox.classList.add("show-img")"
+   hum add ki jagah remove bhi laga sakte he 
+
+2) hum jab kisi element prr mouse event lagate he to jese ki mousemove lagane prr hum console.log karenge dets to parameter pass kiye he vo hame mouse ke sabhi angles and x y direction sab dega click ke liye alag aur mouseover ke liye alag
+
+3) locomotive js librery is used for scroll smooth and and gsap is used for make animation
+
+4) agar hame child ko ya tagelement ko get karna he to hum to js me hum firstelementchild ka use lenge but agar hame textnode bhi chahiye to hum document.childnodes ka use lenge
+
+5) object ke andar agar function likha jaye to to use method kaha jata he 
+
+6) jab hame data string me convert karna ho to hum json.strigify use karenge aur jab hame jesa pehele tha vesa karna he to json.parse ka use karenge
+
+7) in a function this refers a to the globle object when we console.log karte he to window object return karegas
+

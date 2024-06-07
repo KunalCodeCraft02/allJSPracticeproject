@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container{
+            min-height: 500px;
+            width: 500px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="inputBox" type="text" placeholder="Enter Name">
+        <button id="btn">Click</button>
+        <div class="textContact">
+
+        </div>
+    </div>
+
+    <script>
+        let inputBox = document.getElementById("inputBox");
+        let btn = document.getElementById("btn");
+        let textArea = document.querySelector(".textContact");
+       
+        
+
+        function addData(){
+            const CreateElem = document.createElement("p");
+            CreateElem.textContent = inputBox.value;
+            textArea.append(CreateElem)
+        }
+
+
+        btn.addEventListener("click", ()=>{
+            addData();
+        });
+        textArea.addEventListener("click",(event)=>{
+            console.log(event)
+            const rElem = event.target;
+            rElem.remove();
+            
+        });
+    </script>
+</body>
+</html>

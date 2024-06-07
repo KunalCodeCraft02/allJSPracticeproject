@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+
+<body>
+    <section>
+        <p id="countDown">0</p>
+        <div class="buttons">
+            <button class="start_btn">Start</button>
+            <button class="reset_btn">Reset</button>
+            <button class="stop_btn">Stop</button>
+            <button class="time_btn">getTime</button>
+            <button class="clear_btn">clearTime</button>
+        </div>
+        <div class="resetValue"></div>
+    </section>
+    <script>
+        const CoutDown = document.getElementById("countDown");
+        const startbtn = document.querySelector(".start_btn"); 
+        let intervalId; 
+        let count = 0; 
+        let stop_btn = document.querySelector(".stop_btn")
+        let time_btn = document.querySelector(".time_btn");
+        let resetValueDiv = document.querySelector(".resetValue")
+        let reset_btn = document.querySelector(".reset_btn")
+        let CrearParaDiv = document.querySelector(".resetValue p");
+        let clear_btn = document.querySelector('.clear_btn');
+        const startTimeFunc = () => {
+            intervalId = setInterval(() => { 
+               const coutPlus =  CoutDown.innerText = count++;
+            }, 1000);
+        };
+
+        const getTime = () =>{
+            let newPara = document.createElement("p");
+            newPara.innerText = `THE STOP VALUE IS ${count -1}`
+            resetValueDiv.append(newPara)
+            console.log(count)
+        }
+        const reset = () =>{
+            const resetCout = count = 0
+            CoutDown.innerText = resetCout;
+            clearInterval(intervalId)
+        }
+
+        const clearValue = () =>{
+            resetValueDiv.innerText = "";  // HUM INNERTEXT KA USE KAR SAKTE HE JAB HAME
+            // KOI DATA KISI DIV YA PARAGRAPH SE YAA OTHER SE REMOVE KARVANA HO TO ISSE USE  KARNA HE 
+        }
+
+        const StopTime = () =>{
+           const cleatinterval =  clearInterval(intervalId)
+        }
+
+        startbtn.addEventListener("click", startTimeFunc); 
+        stop_btn.addEventListener("click",StopTime);
+        time_btn.addEventListener("click",getTime);
+        reset_btn.addEventListener("click",reset);
+        clear_btn.addEventListener("click",clearValue);
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- UPER KE CODE ME MENE COUNT AUR INTERVELID VARIABLE LOCAL AREA ME ASSIGN KIYE HE ISKA ADVANTGE YE HE KI HUM USE AUR BAHAR WALE FUNCTION ME BHI USE KRR SAKTE HE  -->
+
